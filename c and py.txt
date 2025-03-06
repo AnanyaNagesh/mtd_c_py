@@ -1,0 +1,37 @@
+mtd competitive training
+
+DAY1 thursday 06-03-2025
+
+IMPORTANT GIT COMMANDS
+
+git status
+
+git clone https://github.com/AnanyaNagesh/mtd_c_py
+git clone https://github.com/neelmyna/vvce_mar25
+
+git pull origin main 
+//to download the updated repo, from remote to local
+to make our computer recognise our git acc then thse 2 configurations
+git config --global user.name "AnanyaNagesh"
+git config --global user.email "ananyahnananyanagesh@gmail.com"
+
+https://<pay>@github.com/AnanyaNagesh/mtd_c_py
+
+
+
+
+
+
+
+// accept the no from the user and check if its even
+#include<stdio.h>
+int main()
+{
+int inputNum = 0;
+puts("Enter a number to check if it is Even ");
+scanf("%d",&inputNum);
+if (inputNum % 2 == 0)
+  printf("%d is even",inputNum);
+
+}
+
