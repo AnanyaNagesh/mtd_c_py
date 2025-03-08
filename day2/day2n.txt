@@ -1,0 +1,162 @@
+DAY2 FRIDAY 07-03-2025
+include <stdio.h>
+
+int main() {
+    int input_number;
+    
+    // Input from user
+    printf("Enter a number to print its multiplication table: ");
+    scanf("%d", &input_number);
+
+    // Printing the multiplication table
+    printf("\nMultiplication Table for %d:\n", input_number);
+    for (int multiplier = 1; multiplier <= 10; multiplier++) {
+        printf("%d x %d = %d\n", input_number, multiplier, input_number * multiplier);
+    }
+
+    return 0;
+}
+
+#include <stdio.h>
+
+int main() {
+    float input_marks;
+    
+    // Input from user
+    printf("Enter the student's average marks (0-100): ");
+    scanf("%f", &input_marks);
+
+    // Checking and displaying the result category
+    if (input_marks >= 0 && input_marks < 50) {
+        printf("Result: Fail\n");
+    } else if (input_marks >= 50 && input_marks <= 70) {
+        printf("Result: Second Class\n");
+    } else if (input_marks >= 71 && input_marks <= 90) {
+        printf("Result: First Class\n");
+    } else if (input_marks >= 91 && input_marks <= 100) {
+        printf("Result: Distinction\n");
+    } else {
+        printf("Invalid score! Please enter marks between 0 and 100.\n");
+    }
+
+    return 0;
+}
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int input_number, calculated_square_root;
+    
+    // Input from user
+    printf("Enter a number to check if it's a perfect square: ");
+    scanf("%d", &input_number);
+
+    // Calculating square root
+    calculated_square_root = sqrt(input_number);
+
+    // Checking if the number is a perfect square
+    if (calculated_square_root * calculated_square_root == input_number) {
+        printf("Yes, %d is a perfect square.\n", input_number);
+    } else {
+        printf("No, %d is not a perfect square.\n", input_number);
+    }
+
+    return 0;
+}
+
+#include <stdio.h>
+
+int main() {
+    int input_number, extracted_digit;
+    int smallest_digit = 10, second_smallest_digit = 10;
+    
+    // Input from user
+    printf("Enter a number: ");
+    scanf("%d", &input_number);
+
+    // Extracting digits and finding smallest & second smallest
+    while (input_number > 0) {
+        extracted_digit = input_number % 10;
+        input_number /= 10;
+
+        if (extracted_digit < smallest_digit) {
+            second_smallest_digit = smallest_digit;
+            smallest_digit = extracted_digit;
+        } 
+		else if (extracted_digit > smallest_digit && extracted_digit < second_smallest_digit) {
+            second_smallest_digit = extracted_digit;
+        }
+    }
+
+    // Displaying the result
+    if (second_smallest_digit == 10) {
+        printf("No second smallest digit found.\n");
+    } else {
+        printf("The second smallest digit is: %d\n", second_smallest_digit);
+    }
+
+    return 0;
+}
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char input_number[20];
+    int sum_even_digits = 0;
+
+    // Input from user
+    printf("Enter a number: ");
+    scanf("%s", input_number);
+
+    int total_digits = strlen(input_number);
+
+    // Traversing odd positions (0-based index)
+    for (int position = 0; position < total_digits; position += 2) {
+        int current_digit = input_number[position] - '0'; // Convert char to integer
+
+        // Check if the digit is even
+        if (current_digit % 2 == 0) {
+            sum_even_digits += current_digit;
+        }
+    }
+
+    // Displaying the result
+    printf("Sum of even digits at odd positions: %d\n", sum_even_digits);
+
+   return 0;
+}
+
+---------ASSESSMENT END---------
+
+ARITHMETIC OPERATORS + - * / |
+All are binary operators
+i/p are numbers
+o/p is number
+used with infix notation
+to perform any AO, data type of both opearands must be same
+left to right associtivity wrt reading the values/expressions
+infix expression must be converted to postfix
+the operators have different hierarchy
+--------------------------------------------------------------
+RELATIONAL OPERATORS > < == != >= <=
+All are binary operators
+i/p are numbers
+o/p is number
+used with infix notation
+-------------------------------------
+LOGICAL OPERATORS & && | || !
+i/p are boolean
+o/p is boolean
+-------------------------------
+5 STEPS TO SOLVE THE PROBLEMS
+1.Understand the problem, Recognise the i/p data and the relevent information, Isolate the unwanted dat and info., Recognise the o/p.
+2.Find the solution with all possible ways, Trial and error method, Applying an algorithms etc..
+3.Write the 
+
+----------------------------------------------------------------------------------------
+
+
+
+
