@@ -1,0 +1,6 @@
+exception in python 
+string shld be concatenate with string
+input function always returns a string
+no implicit typecasting in python
+ARITHMETIC OPERATORS
++ = * / // / ** %

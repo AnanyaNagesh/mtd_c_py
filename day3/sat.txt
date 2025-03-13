@@ -1,0 +1,14 @@
+DAY3 SATURDAY 08-03-2025
+gcc -c //stop after the compilation
+gcc -E //stop before the compilation
+gcc  -S //assembly
+-o //specify the target file
+-----------------------************---------------------
+POINTERS
+& OPERATOR	
+"Address of operator"
+It can be apllied only to a variable,including a pointer, because a pointer ia also a variable
+Stack overflow- OS kills the memory
+prolog = starting of the function
+IR-points to the instruction which is running
+PC-points to next instruction
