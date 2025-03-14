@@ -4,3 +4,17 @@ input function always returns a string
 no implicit typecasting in python
 ARITHMETIC OPERATORS
 + = * / // / ** %
+-----------------------------------------------------
+read a string
+capture only the digits
+remove the duplicate digits
+form biggest possible number using the unique digits
+-------------------------------------------
+built in DS of python
+range
+defaut args
+call by
+command line args
+hacker rank
+classes and objects
+double underscore
